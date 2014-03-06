@@ -11,22 +11,31 @@ for instance [1,2,3] would be "an array containing three elements, the integer 1
 and "" would be "a blank string"
 
 1a) :crocodile
+-- A symbol
 
 1b) "145.73"
+-- A string
 
 1c) { :coffee => "cafe" }
+-- a hash, containing a 'key' and a 'value'
 
 1d) [ :green, :eggs, :ham ]
+-- an array (of symbols)
 
 1e) ["tea", {"juice" => "orange"}]
+-- and array, containing a string and a hash, which is nestes (whish also contains strings)
 
 2) Here is an array:
 array = ["Molly", "Greg", "Taz"]
 Write a line of ruby that appends the values "Jay" and "Mona" to the array.
+-- array << ["Jay", "Mona"]
 
 3) Here is a hash:
 hash = { :cow => "Moo", :sheep => "Baah" }
 Write a line of ruby that replaces the value of the key :sheep with "Bleat".
+-- 
+    hash[sheep] = "bleat"
+
 
 4) The file number_converter.rb contains a method called convert_number that doesn't do anything.
 
@@ -36,11 +45,21 @@ Replace the #??? comment inside it so that:
 
 5) Write a method that takes one argument (an array full of strings) and `puts` each word separately, but in uppercase.
 
+-- in number converter
+
+
 6) What's the difference between an object and an instance?
+
+-- off the top of my head, no idea, lets google that. 
+			apparently, an object of an instance is a class. a class is much like a blueprint, or set of instructions, all things made from that class are objects of it. a singular house is an instance.
+
+			Though I am still unsure of this, much like a house built on a swamp
 
 Testing
 -------
 7) robot.rb contains a simple class with two methods. robot_spec.rb is the start of a spec file - it runs, but there aren't any tests in it.
+
+-- (it is now 6 o'clock....)
 
 a) Write a test that checks greet('Ada') returns the string "HELLO ADA".
 b) Write a test that checks calculate(4, 5) returns 9.
@@ -53,20 +72,31 @@ HTML, CSS and Javascript
 
 8) In a sentance, describe:
 a) what is HTML?
+ -- Hyper text lanuage markup - a document or where things are ona  page, that is like a living this, as it has a head (all the thinking things) and the body
+
 b) what is CSS?
+ -- content style sheet,  on different document, this designs everything on the HTML
+
 c) what is Javascript?
+ --  a clever thing that captures moments/events on screen and plays with them, this can create super awesom sites that react to whatever you do to them
+
 
 9) State if the following lines are HTML, CSS,or Javascript:
 
 a) <p>Lorem Ipsum</p>
+-- HTML
 
 b) console.log("Some words");
+-- Javascript
 
 c) p { background-color: yellow }
+-- CSS
 
 d) <table width="50%"></table>
+ -- HTML
 
 e) <div id="index" class="small left"></div>
+-- HTML RUN OUT OF TIME NOW
 
 10) Describe the following Javascript objects, like you did for the first question:
 
